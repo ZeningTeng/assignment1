@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="assignment1.css">
+    <link rel="icon" type="image/png" href="catPixel.png">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Cat Website</h1>
+    </header>
+   
+    <img src="catPixel.png" id="icon">
+    <script>
+        const cat = document.getElementById('icon');
+
+
+
+
+
+
+     
+
+
+
+let catX = 0;
+let catY = 0;
+let mouseX = catX;
+let mouseY = catY;
+document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+});
+setInterval(() => {
+    const dx = mouseX - catX;
+    const dy = mouseY - catY;
+   
+    
+
+    const distance = Math.sqrt(dx * dx + dy * dy);
+
+
+ 
+
+    catX += dx * 0.3; 
+    catY += dy * 0.3;
+ 
+    if(dx>=0){
+        cat.style.transform ='scaleX(-1)';
+    }
+    else{
+        cat.style.transform ='scaleX(1)';
+    }
+   
+    cat.style.left = `${catX}px`;
+    cat.style.top = `${catY}px`;
+        },1);
+
+
+    </script>
+   
+    <section id="start">
+        <img src="cat1.jpg" align="middle" width="300" height="200" alt="Just a random cat">
+    </section>
+    <section id="about">
+        <h2>About This Webpage</h2>
+        <p>This is a creative website showcasing cats.</p>
+    </section>
+    
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <figure>
+            <img src="cat.jpg" id="cat" align="middle" width="300" height="400" alt="Just a random cat">
+            <figcaption>Just a random cat</figcaption>
+        </figure>
+        <audio id="catAudio">
+            <source src="cat-meow.mp3" type="audio/mpeg">
+           
+        </audio>
+        <script>
+        function playMusic(){
+            var music = new Audio('cat-meow.mp3');
+            music.play();
+            }
+        </script>
+
+        <input type="button" value="Click For A Meow" onclick="playMusic()"/>
+        <video id="CatVideo" controls>
+            <source src="cat-video.mp4" type="video/mp4">
+            
+          
+        </video>
+        <a href="https://www.youtube.com/results?search_query=cat">Click for more cat video</a>
+    </section>
+    <table>
+        <tr>
+          <th>Cat Breed</th>
+          
+         
+        </tr>
+        <tr>
+          <td>
+         
+           
+            <a href="https://www.google.com/search?q=Siamese&sca_esv=71b7a5c308237303&rlz=1C1VDKB_enUS1123US1123&sxsrf=ADLYWIKAqZiHqwO0eXWStUfwuIDfH7lv-A%3A1737087925227&ei=tduJZ7rKDemu5NoP5Jju0Qo&ved=0ahUKEwj6-Ofl9PuKAxVpF1kFHWSMO6oQ4dUDCBA&uact=5&oq=Siamese&gs_lp=Egxnd3Mtd2l6LXNlcnAiB1NpYW1lc2UyCBAuGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyERAuGIAEGMcBGMsBGI4FGK8BMggQLhiABBjLATIIEC4YgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEC4YgAQYywEyCBAAGIAEGMsBMhcQLhiABBjLARiXBRjcBBjeBBjfBNgBAUimRFAAWLI5cAJ4AZABAJgBa6ABa6oBAzAuMbgBA8gBAPgBAfgBApgCA6ACgQGoAgrCAgcQIxgnGOoCmAMG8QWzZlANP40MH7oGBggBEAEYFJIHAzIuMaAHjR0&sclient=gws-wiz-serp">Siamese</a>
+         
+        
+        </tr>
+        <tr>
+          <td>  <a href="https://www.google.com/search?q=Maine+Coon&sca_esv=71b7a5c308237303&rlz=1C1VDKB_enUS1123US1123&sxsrf=ADLYWILqM-0UGWwfhHBBlKSBjQfdA41brQ%3A1737087937113&ei=wduJZ-TQBtCl5NoPo7eGuAk&ved=0ahUKEwiktb3r9PuKAxXQElkFHaObAZcQ4dUDCBA&uact=5&oq=Maine+Coon&gs_lp=Egxnd3Mtd2l6LXNlcnAiCk1haW5lIENvb24yCBAuGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyCBAAGIAEGMsBMhcQLhiABBjLARiXBRjcBBjeBBjfBNgBAUjmBlDuAljuAnABeAGQAQCYAVugAVuqAQExuAEDyAEA-AEC-AEBmAICoAJmwgIKEAAYsAMY1gQYR5gDAIgGAZAGCroGBggBEAEYFJIHATKgB7oK&sclient=gws-wiz-serp"> Maine Coon</a> </td>
+         
+        </tr>
+        <tr>
+            <td>  <a href="https://www.google.com/search?q=perisan+cat&rlz=1C1VDKB_enUS1123US1123&oq=perisan+cat&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQLhgKGIAEMgkIAhAAGAoYgAQyCQgDEAAYChiABDIJCAQQABgKGIAEMgkIBRAAGAoYgAQyCQgGEAAYChiABDIJCAcQABgKGIAEMgkICBAAGAoYgATSAQgyNDkzajBqOagCALACAA&sourceid=chrome&ie=UTF-8">Persian</a>  </td>
+           
+          </tr>
+          <tr>
+            <td>    <a href="https://www.google.com/search?q=Bengal&sca_esv=690aa80fa67a51a6&rlz=1C1VDKB_enUS1123US1123&sxsrf=ADLYWILOyLBH8bIyJGSRMQckARzlHS7Vxw%3A1737088012149&ei=DNyJZ_zqCObV5NoPkIiZqAg&ved=0ahUKEwj8oKGP9fuKAxXmKlkFHRBEBoUQ4dUDCBA&uact=5&oq=Bengal&gs_lp=Egxnd3Mtd2l6LXNlcnAiBkJlbmdhbDILEC4YgAQY1AIYywEyCBAuGIAEGMsBMggQLhiABBjLATIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIIEAAYgAQYywEyGhAuGIAEGNQCGMsBGJcFGNwEGN4EGN8E2AEBSJECUABYAHAAeAGQAQCYAWCgAWCqAQExuAEDyAEA-AEC-AEBmAIBoAJmmAMA4gMFEgExIEC6BgYIARABGBSSBwMwLjGgB_MS&sclient=gws-wiz-serp">Bengal</a> </td>
+           
+          </tr>
+      </table>
+    <section id="contact">
+        <form>
+            <label for="name">Name:</label>
+            <input list="name" name="name">
+            <datalist id="name">
+                <option value="a">
+                <option value="b">
+           
+            </datalist>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Submit</button>
+
+          
+        </form>
+    </section>
+    <article>
+        <h2>this is an</h2>
+        <p>Article!</p>
+        <details>
+            <summary>
+                <p>Adopt a cat in the US is easy, but you might want to consider the costs first.</p>
+                <p>Fees typically range from $50 to $350 to adopt a cat from shelter</p>
+                <p>average annual expense:$1149</p>
+            </summary>
+        </details>
+    </article>
+    <aside>
+        <h3>this is an aside</h3>
+      
+    </aside>
+    <footer>
+        <p>Contact us: <a href="malito:myCatWebsite@somethinghere.com">myCatWebsite@somethinghere.com</a>  <a href="tel:+1234567890">+1234567890</a></p>
+    </footer>
+</body>
+</html>

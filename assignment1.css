@@ -1,0 +1,131 @@
+
+
+header {
+    background: linear-gradient(to right, #ff0037, #0b4ef7);
+    color: white;
+    text-align: center;
+    padding: 50px ;
+}
+
+header h1 {
+
+    font-size: 36px;
+  
+    background: linear-gradient(to right, #ffffff, #5100ff,#00ff95, #f70616);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#start {
+    text-align: center;
+}
+
+section {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgb(152, 223, 255);
+   
+    box-shadow: 0 44px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+video{
+    width: 800px; 
+    height: 600px;
+}
+#icon {
+    position: fixed;
+    width: 80px; 
+    height: 80px;
+    transition: transform 1s ease,left 1.5s ease, top 1.5s ease; 
+   
+}
+table{
+    background-color: #ffffff;
+    text-align: center;
+        margin: 20px auto;
+    width: 800px;
+ 
+    box-shadow: 0 44px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+figcaption {
+    font-size: 1;
+    color: #666;
+    margin-top: 5px;
+}
+
+input[type="button"] {
+   
+    margin: 10px auto;
+    background-color: #0070ef;
+    color: white;
+   
+   
+  
+   
+  
+    box-shadow: 0 44px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+form input {
+    padding: 10px;
+ 
+}
+
+form button {
+    background-color: #50a684;
+    color: white;
+    padding: 10px 15px;
+ 
+ 
+}
+
+form button:hover {
+    background-color: #3f8c72;
+}
+article {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 15px;
+    background: #f3aaaa;
+   
+    box-shadow: 0 44px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 15px;
+    background: #f0ffc5;
+   
+    box-shadow:  44px 8px rgba(0, 0, 0, 0.1);
+    color: #555;
+}
+
+aside h3 {
+    color: #4a90e2;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+
+}
+
